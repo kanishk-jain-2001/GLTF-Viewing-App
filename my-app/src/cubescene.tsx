@@ -34,7 +34,7 @@ const CubeScene: React.FC = () => {
 
     // GLTF model loading
     const loader = new GLTFLoader();
-    loader.load(process.env.PUBLIC_URL + '/models/CRANK.gltf', (gltf) => {
+    loader.load(process.env.PUBLIC_URL + '/models/crank.gltf', (gltf) => {
         scene.add(gltf.scene);
       }, undefined, (error) => {
         console.error(error);
